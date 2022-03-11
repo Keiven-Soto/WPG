@@ -45,9 +45,9 @@
     font-size: 3.5rem;
 }
 
-.fa-gem {
+/* .fa-gem {
     margin-right: 0.5rem;
-}
+} */
 
 .navbar__menu {
     display: flex;
@@ -204,7 +204,7 @@
     align-items: center;
     justify-self: center;
     margin: 0 auto;
-    height: 90vh;
+    height: 100vh;
     background-color: #d3cfc5;
     z-index: 1;
     width: 100%;
@@ -470,8 +470,8 @@
 
 /* Footer CSS */
 
-.footer__container {
-    background-color: #141414;
+/* .footer__container {
+    background-color: #d3cfc5;
     padding: 5rem 0;
     display:flex;
     flex-direction: column;
@@ -480,7 +480,7 @@
 }
 
 #footer__logo  {
-    color: #fff;
+    color: #141414;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -493,7 +493,6 @@
     max-width: 1000px;
     display: flex;
     justify-content: center;
-    color: #fff;
 }
 
 
@@ -503,7 +502,7 @@
 
 .footer__link--items{
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     align-items: flex-start;
     margin: 16px;
     text-align: left;
@@ -518,11 +517,11 @@
 
 
 .footer__link--items > h2{
-    color: #fff;
+    color: #141414;
 }
 
 .footer__link--items a{
-    color: #fff;
+    color: #141414;
     text-decoration: none;
     margin-bottom: 0.5rem;
 }
@@ -531,13 +530,13 @@
 .footer__link--items a:hover{
     color: #e9e9e9;
     transition: 0.3s ease-out;
-}
+} */
 
 
-/* Social Icons */
-/* 
-.social__icon--link{
-    color: rgb(255, 255, 255);
+/* Social Icons  */
+
+/* .social__icon--link{
+    color: #141414;
     font-size: 24px;
 
 }
@@ -564,7 +563,7 @@
 }
 
 .social__logo{
-    color: rgb(255, 255, 255);
+    color: #141414;
     justify-self: flex-start;
     margin-left: 20px;
     cursor: pointer;
@@ -576,7 +575,7 @@
 }
 
 .website__rights{
-    color: #fff;
+    color: #141414;
 }
 
 
@@ -646,94 +645,4 @@ body {
 
 .info__btn:hover{
     background: #4837ff;
-}
-
-
-/* CALENDAR SECTION */
-
-
-.calendar__container{
-    display: grid;
-    grid-template-columns: 50px auto;
-    grid-template-rows: auto;
-    gap: 1px 1px;
-    grid-template-areas: 
-    ". header"
-    "timeslots-container main";
-}
-
-.calendar-container ul{
-    margin: 0;
-    padding: 0;
-    font-size: 1.5rem;
-}
-.calendar-container li{
-    list-style: none;
-}
-.weekdays,
-.dayNumbers{
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    min-height: 1.75rem;
-}
-
-.weekdays{
-    background-color: lightblue;
-}
-.header{
-    background: grey;
-    grid-area: header;
-}
-
-.timeslots-container {
-    background: transparent;
-    grid-area: timeslots-container;
-    justify-content: left;
-}
-
-.timeslots {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    
-}
-
-.timeslots li{
-    min-height: 60px; 
-}
-
-.timeslots li::after{
-    content: "";
-    position: absolute;
-    left: 10px;
-    width: 100%;
-    height: 1px;
-    background: white;
-    z-index: 1;
-}
-
-.event-container{
-    display: grid;
-    grid-template-columns: repeat(7,1fr);
-    grid-template-rows: repeat(9,1fr);
-    grid-area: main;
-    position: relative;
-}
-
-.slot {
-    position: absolute;
-    background: rgb(92, 92, 92);
-    border-radius: 5px;
-    z-index: 5;
-    color: white;
-    font-size: 12px;
-}
-
-.slot-1{
-    height: 60px;
-    /* el grid row hace que muevas entre las horas
-    60px = 1hr
-    30px = 0.5hr */
-    grid-row: 1; 
-    grid-column: 4 ;
 }
