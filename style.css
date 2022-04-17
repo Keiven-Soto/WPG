@@ -142,7 +142,7 @@ html {
     }
     #navbar__logo {
         padding-left: 25px;
-       
+        font-size: 6vw;
     }
     .navbar__toggle .bar {
         width: 25px;
@@ -228,7 +228,7 @@ html {
     }
     #navbar__logo {
         padding-left: 25px;
-        font-size: 3rem;
+        font-size: 6vw;
     }
     .navbar__toggle .bar {
         width: 25px;
@@ -314,7 +314,7 @@ html {
     }
     #navbar__logo {
         padding-left: 25px;
-        font-size: 3rem;
+        font-size: 6vw;
     }
     .navbar__toggle .bar {
         width: 25px;
@@ -400,7 +400,7 @@ html {
     }
     #navbar__logo {
         padding-left: 25px;
-        font-size: 2rem;
+        font-size: 6vw;
     }
     .navbar__toggle .bar {
         width: 25px;
@@ -588,24 +588,96 @@ html {
     }
 }
 
-@media screen and (min-width: 360px ){
-
+@media screen and (max-width: 480px ){
+    
+    .main__content{
+        align-items: center;
+        margin-top: 60%;
+        position: absolute;
+    }
     .main__content h1{
-        font-size: 2rem;
-        margin-top: 3rem;
+        font-size: 2.15rem;
+        align-items: center;
+        text-align: center;
     }
     .main__content h2{
-        font-size: 2rem;
+        font-size: 1.75rem;
+        align-items: center;
+        text-align: center;
+        
+    }
+    .main__content p{
+        margin-top: 2rem;
+        font-size: 1.5rem; 
+        margin-inline-start: 50px; 
+        display: flex;   
+    }
+    .main__btn{
+        margin-top: 2rem;
+        padding: 12px 36px;
+        text-align: center;
+        position: relative;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        left: 25%;
+    }
+    .main__img--container {
+        position: absolute;
+        align-items: center;
+        text-align: center;
+        top: 150px;
+    }
+}
+
+@media screen and (max-width: 360px ){
+    .main__container {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-self: center;
+    }
+    .main__content{
+        align-items: center;
+        margin-top: 80%;
+        position: absolute;
+    }
+    .main__content h1{
+        font-size: 2.15rem;
+        margin-top: 3rem;
+        /* align-items: center; */
+    }
+    .main__content h2{
+        font-size: 1.75rem;
+        margin-top: 1rem;
+        /* align-items: center; */
+        
     }
 
     .main__content p{
         margin-top: 2rem;
         font-size: 1.5rem;
+        padding-right: 15%;
     }
 
     .main__btn{
         padding: 12px 36px;
         margin : 2.5rem 0;
+        justify-items: center;
+        align-items: center;
+        position: relative;
+        left: 20%;
+        justify-content: center;
+    }
+    .main__img--container {
+        position: absolute;
+        align-items: center;
+        text-align: center;
+        top: 125px;
+        padding-right: 5%;
+        height: 300px;
+        width: 275px;;
+
     }
 }
 
